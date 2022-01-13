@@ -1,0 +1,13 @@
+﻿,Cases,VMT Total,News Sentiment,Umemployment Rate,PRCP,SNWD,Percent_Fully_Vaccinated_12&Older,TAVG,Stay at Home,Mask,School Opening,Health Emergency
+Cases,1,1,1,1,0,0,1,0,1,1,1,1
+VMT Total,1,1,1,0,0,0,0,0,0,0,0,0
+News Sentiment,0,1,1,0,0,0,0,0,0,0,0,0
+Umemployment Rate,1,1,1,1,0,0,0,0,1,0,0,0
+PRCP,0,1,0,0,1,1,0,0,0,0,0,0
+SNWD,0,1,0,0,0,1,0,0,0,0,0,0
+Percent_Fully_Vaccinated_12&Older,1,1,1,1,0,0,1,0,0,1,0,0
+TAVG,1,1,0,0,0,1,0,1,0,0,0,0
+Stay at Home,1,1,1,1,0,0,0,0,1,0,0,0
+Mask,1,1,1,0,0,0,1,0,0,1,0,0
+School Opening,1,1,1,0,0,0,0,0,0,0,1,0
+Health Emergency,1,1,0,0,0,0,0,0,0,0,0,0
