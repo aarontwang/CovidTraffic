@@ -1,0 +1,23 @@
+Model: "sequential_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_25 (LSTM)              (None, 6, 90)             37440     
+                                                                 
+ dropout_25 (Dropout)        (None, 6, 90)             0         
+                                                                 
+ lstm_26 (LSTM)              (None, 6, 90)             65160     
+                                                                 
+ dropout_26 (Dropout)        (None, 6, 90)             0         
+                                                                 
+ lstm_27 (LSTM)              (None, 90)                65160     
+                                                                 
+ dropout_27 (Dropout)        (None, 90)                0         
+                                                                 
+ dense_7 (Dense)             (None, 1)                 91        
+                                                                 
+=================================================================
+Total params: 167,851
+Trainable params: 167,851
+Non-trainable params: 0
+_________________________________________________________________

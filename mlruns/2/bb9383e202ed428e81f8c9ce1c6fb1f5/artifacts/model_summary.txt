@@ -1,0 +1,27 @@
+Model: "sequential_8"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ lstm_28 (LSTM)              (None, 2, 15)             1740      
+                                                                 
+ dropout_28 (Dropout)        (None, 2, 15)             0         
+                                                                 
+ lstm_29 (LSTM)              (None, 2, 15)             1860      
+                                                                 
+ dropout_29 (Dropout)        (None, 2, 15)             0         
+                                                                 
+ lstm_30 (LSTM)              (None, 2, 15)             1860      
+                                                                 
+ dropout_30 (Dropout)        (None, 2, 15)             0         
+                                                                 
+ lstm_31 (LSTM)              (None, 15)                1860      
+                                                                 
+ dropout_31 (Dropout)        (None, 15)                0         
+                                                                 
+ dense_8 (Dense)             (None, 1)                 16        
+                                                                 
+=================================================================
+Total params: 7,336
+Trainable params: 7,336
+Non-trainable params: 0
+_________________________________________________________________

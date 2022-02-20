@@ -1,6 +1,56 @@
 import pandas as pd
 from sklearn import preprocessing
 import matplotlib.pyplot as plt
+import utils
+import config
+
+
+def format_data(data, weeks=2):
+    X_total = data.values[:156, :]
+
+    data = X_total[(60-weeks):, :]
+    scaler, values = utils.scale(data)
+    values = utils.series_to_supervised(values, n_in=weeks, n_out=1, dropnan=True).values
+
+    y_scaler, y = utils.scale(data[:, 1].reshape((len(data), 1)))
+
+    train = values[:88, :]
+    valid = values[88:92]
+    test = values[92:, :]
+
+    features = 13
+    obs = weeks*features
+
+    y = values[:, -config.N_FEATURES:]
+
+    X_train = train[:, :obs]
+    y_train = train[:, -features:][:, 1]
+    X_valid = valid[:, :obs]
+    y_valid = valid[:, -features:][:, 1]
+    X_test = test[:, :obs]
+    y_test = test[:, -features:][:, 1]
+    print(X_train.shape)
+    X_train = X_train.reshape((X_train.shape[0], weeks, features))
+    X_valid = X_valid.reshape((X_valid.shape[0], weeks, features))
+    X_test = X_test.reshape((X_test.shape[0], weeks, features))
+    print(X_train.shape)
+
+    return X_train, y_train, X_valid, y_valid, X_test, y_test
+
+
+def scale_y(data, weeks):
+    X_total = data.values[:156, :]
+
+    data = X_total[(60 - weeks):, :]
+    scaler, values = utils.scale(data)
+    values = utils.series_to_supervised(values, n_in=weeks, n_out=1, dropnan=True).values
+
+    y_scaler, y = utils.scale(data[:, 1].reshape((len(data), 1)))
+    features = 13
+
+    y = values[:, -config.N_FEATURES:]
+
+    return y_scaler, y
 
 
 def save_plot(H, path):

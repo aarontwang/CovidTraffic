@@ -1,0 +1,15 @@
+artifact_uri: ./mlruns/0/af89f073994f4280b0dc6465772030bc/artifacts
+end_time: 1644616637514
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: af89f073994f4280b0dc6465772030bc
+run_uuid: af89f073994f4280b0dc6465772030bc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1644616607731
+status: 3
+tags: []
+user_id: aawang

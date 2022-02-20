@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/aawang/CovidTraffic/mlruns/2/5cdba6cd70cb444187ea0eb972591a88/artifacts
+end_time: 1644712614119
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: 5cdba6cd70cb444187ea0eb972591a88
+run_uuid: 5cdba6cd70cb444187ea0eb972591a88
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1644712562742
+status: 3
+tags: []
+user_id: aawang
