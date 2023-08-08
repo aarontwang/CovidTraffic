@@ -8,11 +8,11 @@ Features used:
 * Daily news sentiment index
 * Monthly unemployment rate in Salt Lake County
 * Weather conditions
-* * Temperature
+  * Temperature
   * Precipitation
   * Snow depth
 * Pandemic-related government policies
-* * Stay-at-home orders
+  * Stay-at-home orders
   * Mask mandates
   * School closings
   * State of emergency
