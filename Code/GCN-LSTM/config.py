@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 OUTPUT_PATH = 'output'
-EPOCHS = 1000
+EPOCHS = 3000
 BS = 5
 EARLY_STOPPING_PATIENCE = 10
 SEQ_LEN = 1

@@ -65,15 +65,14 @@ def save_plot(H, path):
     plt.savefig(path)
 
 
-def plot_predicted(true, predicted, path):
-    plt.style.use('ggplot')
+def plot_predicted(true, predicted, title, path):
     plt.figure()
+    plt.title(title)
     plt.plot(true, label='True')
     plt.plot(predicted, label='Predicted')
     plt.xlabel("Week")
     plt.ylabel("VMT")
     plt.legend()
-    plt.show()
     plt.savefig(path)
 
 
